@@ -12,7 +12,7 @@
     "zip": "wxt zip",
     "zip:firefox": "wxt zip -b firefox",
     "compile": "tsc --noEmit",
-    "postinstall": "wxt prepare",
+    "postinstall": "wxt prepare && eslint --flag unstable_ts_config",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
@@ -26,6 +26,7 @@
     "clsx": "^2.1.1",
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-prettier": "^5.2.3",
+    "jiti": "^2.4.2",
     "lucide-react": "^0.483.0",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "react": "^19.0.0",
